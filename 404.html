@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>404 - MediNest Bootstrap Template</title>
+  <title>404 - Clinic Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,9 +29,9 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: MediNest
-  * Template URL: https://bootstrapmade.com/medinest-bootstrap-hospital-template/
-  * Updated: Aug 11 2025 with Bootstrap v5.3.7
+  * Template Name: Clinic
+  * Template URL: https://bootstrapmade.com/clinic-bootstrap-template/
+  * Updated: Jul 23 2025 with Bootstrap v5.3.7
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -39,60 +39,78 @@
 
 <body class="page-404">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header fixed-top">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Medi<span>Nest</span></h1>
-      </a>
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="departments.html">Departments</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="doctors.html">Doctors</a></li>
-          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="department-details.html">Department Details</a></li>
-              <li><a href="service-details.html">Service Details</a></li>
-              <li><a href="appointment.html">Appointment</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="terms.html">Terms</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
-              <li><a href="404.html" class="active">404</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    <div class="branding d-flex align-items-cente">
 
-      <a class="btn-getstarted" href="apointment.html">Apointment</a>
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">Clinic</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="department-details.html">Department Details</a></li>
+                <li><a href="service-details.html">Service Details</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">Frequently Asked Questions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="404.html" class="active">404</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
 
     </div>
+
   </header>
 
   <main class="main">
@@ -129,44 +147,68 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="error-wrapper">
-          <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-              <div class="error-illustration">
-                <i class="bi bi-exclamation-triangle-fill"></i>
-                <div class="circle circle-1"></div>
-                <div class="circle circle-2"></div>
-                <div class="circle circle-3"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+
+            <div class="error-number" data-aos="zoom-in" data-aos-delay="200">
+              404
+            </div>
+
+            <h1 class="error-title" data-aos="fade-up" data-aos-delay="300">
+              Page Not Found
+            </h1>
+
+            <p class="error-description" data-aos="fade-up" data-aos-delay="400">
+              The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            </p>
+
+            <div class="error-actions" data-aos="fade-up" data-aos-delay="500">
+              <a href="/" class="btn-primary">
+                <i class="bi bi-house"></i>
+                Back to Home
+              </a>
+              <a href="#" class="btn-secondary">
+                <i class="bi bi-search"></i>
+                Search Site
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-10">
+
+            <div class="helpful-links" data-aos="fade-up" data-aos-delay="600">
+              <h3>You might be looking for:</h3>
+              <div class="links-grid">
+                <a href="#" class="link-item">
+                  <i class="bi bi-info-circle"></i>
+                  <span>About Us</span>
+                </a>
+                <a href="#" class="link-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>Contact</span>
+                </a>
+                <a href="#" class="link-item">
+                  <i class="bi bi-grid-3x3-gap"></i>
+                  <span>Services</span>
+                </a>
+                <a href="#" class="link-item">
+                  <i class="bi bi-journal-text"></i>
+                  <span>Blog</span>
+                </a>
+                <a href="#" class="link-item">
+                  <i class="bi bi-question-circle"></i>
+                  <span>Support</span>
+                </a>
+                <a href="#" class="link-item">
+                  <i class="bi bi-shield-check"></i>
+                  <span>Privacy Policy</span>
+                </a>
               </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-              <div class="error-content">
-                <span class="error-badge" data-aos="zoom-in" data-aos-delay="400">Error</span>
-                <h1 class="error-code" data-aos="fade-up" data-aos-delay="500">404</h1>
-                <h2 class="error-title" data-aos="fade-up" data-aos-delay="600">Page Not Found</h2>
-                <p class="error-description" data-aos="fade-up" data-aos-delay="700">
-                  The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
-                </p>
 
-                <div class="error-actions" data-aos="fade-up" data-aos-delay="800">
-                  <a href="/" class="btn-home">
-                    <i class="bi bi-house-door"></i> Back to Home
-                  </a>
-                  <a href="#" class="btn-help">
-                    <i class="bi bi-question-circle"></i> Help Center
-                  </a>
-                </div>
-
-                <div class="error-suggestions" data-aos="fade-up" data-aos-delay="900">
-                  <h3>You might want to:</h3>
-                  <ul>
-                    <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Check our sitemap</a></li>
-                    <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Contact support</a></li>
-                    <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Return to previous page</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -176,83 +218,130 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative">
+  <footer id="footer" class="footer-16 footer position-relative">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">MediNest</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+    <div class="container">
+
+      <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-start">
+
+          <div class="col-lg-5">
+            <div class="brand-section">
+              <a href="index.html" class="logo d-flex align-items-center mb-4">
+                <span class="sitename">Clinic</span>
+              </a>
+              <p class="brand-description">Crafting exceptional digital experiences through thoughtful design and innovative solutions that elevate your brand presence.</p>
+
+              <div class="contact-info mt-5">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>123 Creative Boulevard, Design District, NY 10012</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+1 (555) 987-6543</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>hello@designstudio.com</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+
+          <div class="col-lg-7">
+            <div class="footer-nav-wrapper">
+              <div class="row">
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Studio</h6>
+                    <nav class="footer-nav">
+                      <a href="#">Our Story</a>
+                      <a href="#">Design Process</a>
+                      <a href="#">Portfolio</a>
+                      <a href="#">Case Studies</a>
+                      <a href="#">Awards</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Services</h6>
+                    <nav class="footer-nav">
+                      <a href="#">Brand Identity</a>
+                      <a href="#">Web Design</a>
+                      <a href="#">Mobile Apps</a>
+                      <a href="#">Digital Strategy</a>
+                      <a href="#">Consultation</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Resources</h6>
+                    <nav class="footer-nav">
+                      <a href="#">Design Blog</a>
+                      <a href="#">Style Guide</a>
+                      <a href="#">Free Assets</a>
+                      <a href="#">Tutorials</a>
+                      <a href="#">Inspiration</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Connect</h6>
+                    <nav class="footer-nav">
+                      <a href="#">Start Project</a>
+                      <a href="#">Schedule Call</a>
+                      <a href="#">Join Newsletter</a>
+                      <a href="#">Follow Updates</a>
+                      <a href="#">Partnership</a>
+                    </nav>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
       </div>
+
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong>MediNest</strong>&nbsp;<span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-content" data-aos="fade-up" data-aos-delay="300">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6">
+              <div class="copyright">
+                <p>© <span class="sitename">Clinic</span>. All rights reserved.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <div class="credits">
+                  <!-- All the links in the footer should remain intact. -->
+                  <!-- You can delete the links only if you've purchased the pro version. -->
+                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                  <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
 
@@ -270,8 +359,6 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->

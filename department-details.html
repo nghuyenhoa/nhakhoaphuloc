@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Department Details - MediNest Bootstrap Template</title>
+  <title>Department Details - Clinic Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,9 +29,9 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: MediNest
-  * Template URL: https://bootstrapmade.com/medinest-bootstrap-hospital-template/
-  * Updated: Aug 11 2025 with Bootstrap v5.3.7
+  * Template Name: Clinic
+  * Template URL: https://bootstrapmade.com/clinic-bootstrap-template/
+  * Updated: Jul 23 2025 with Bootstrap v5.3.7
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -39,60 +39,78 @@
 
 <body class="department-details-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header fixed-top">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Medi<span>Nest</span></h1>
-      </a>
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="departments.html">Departments</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="doctors.html">Doctors</a></li>
-          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="department-details.html" class="active">Department Details</a></li>
-              <li><a href="service-details.html">Service Details</a></li>
-              <li><a href="appointment.html">Appointment</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="terms.html">Terms</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
-              <li><a href="404.html">404</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    <div class="branding d-flex align-items-cente">
 
-      <a class="btn-getstarted" href="apointment.html">Apointment</a>
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">Clinic</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="department-details.html" class="active">Department Details</a></li>
+                <li><a href="service-details.html">Service Details</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">Frequently Asked Questions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="404.html">404</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
 
     </div>
+
   </header>
 
   <main class="main">
@@ -129,70 +147,51 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <div class="department-content" data-aos="fade-right" data-aos-delay="200">
-              <div class="department-header">
-                <div class="specialty-tag">
-                  <i class="bi bi-heart-pulse"></i>
-                  <span>Cardiology</span>
-                </div>
-                <h1 class="department-name">Comprehensive Heart Care Center</h1>
-                <p class="department-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+        <div class="row">
+          <div class="col-xl-6 col-lg-7">
+            <div class="department-hero" data-aos="fade-right" data-aos-delay="200">
+              <div class="badge-wrap">
+                <span class="specialty-badge">Neurology</span>
               </div>
+              <h1 class="department-title">Advanced Neurological Care</h1>
+              <p class="department-intro">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
 
-              <div class="service-highlights" data-aos="fade-up" data-aos-delay="300">
-                <h3>Specialized Services</h3>
-                <div class="highlights-grid">
-                  <div class="highlight-card">
-                    <div class="highlight-icon">
-                      <i class="bi bi-activity"></i>
-                    </div>
-                    <h4>Cardiac Surgery</h4>
-                    <p>Donec rutrum congue leo eget malesuada vestibulum ac diam sit amet quam.</p>
-                  </div>
-                  <div class="highlight-card">
-                    <div class="highlight-icon">
-                      <i class="bi bi-eye"></i>
-                    </div>
-                    <h4>Diagnostic Testing</h4>
-                    <p>Curabitur arcu erat accumsan id imperdiet et porttitor at sem mauris blandit.</p>
-                  </div>
-                  <div class="highlight-card">
-                    <div class="highlight-icon">
-                      <i class="bi bi-shield-plus"></i>
-                    </div>
-                    <h4>Preventive Care</h4>
-                    <p>Nulla quis lorem ut libero malesuada feugiat cras ultricies ligula sed magna.</p>
-                  </div>
+              <div class="key-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-number">24/7</span>
+                  <span class="highlight-text">Emergency Neurology</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">15+</span>
+                  <span class="highlight-text">Specialist Neurologists</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">95%</span>
+                  <span class="highlight-text">Patient Satisfaction</span>
                 </div>
               </div>
 
-              <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
-                <a href="appointment.html" class="btn-appointment">
-                  <i class="bi bi-calendar-plus"></i>
-                  <span>Book Appointment</span>
+              <div class="action-group">
+                <a href="appointment.html" class="btn-primary">Schedule Consultation</a>
+                <a href="services.html" class="btn-secondary">
+                  <span>View All Services</span>
+                  <i class="bi bi-arrow-right"></i>
                 </a>
-                <div class="contact-quick">
-                  <span class="contact-label">Emergency Line</span>
-                  <span class="contact-number">+1 (555) 987-6543</span>
-                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-5">
-            <div class="visual-section" data-aos="fade-left" data-aos-delay="300">
-              <div class="main-visual">
-                <img src="assets/img/health/cardiology-3.webp" alt="Cardiology Department" class="img-fluid department-image">
-                <div class="stats-overlay" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="stat-item">
-                    <span class="stat-number">98%</span>
-                    <span class="stat-label">Success Rate</span>
+          <div class="col-xl-6 col-lg-5">
+            <div class="department-visual" data-aos="fade-left" data-aos-delay="300">
+              <div class="image-container">
+                <img src="assets/img/health/neurology-2.webp" alt="Neurology Department" class="img-fluid primary-image">
+                <div class="floating-card" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="card-icon">
+                    <i class="bi bi-brain"></i>
                   </div>
-                  <div class="stat-item">
-                    <span class="stat-number">12K+</span>
-                    <span class="stat-label">Patients Treated</span>
+                  <div class="card-content">
+                    <h4>Brain Health Experts</h4>
+                    <p>Comprehensive neurological assessment and treatment</p>
                   </div>
                 </div>
               </div>
@@ -200,69 +199,125 @@
           </div>
         </div>
 
-        <div class="department-details" data-aos="fade-up" data-aos-delay="600">
-          <div class="row">
+        <div class="services-overview" data-aos="fade-up" data-aos-delay="400">
+          <div class="row justify-content-center">
             <div class="col-lg-8">
-              <div class="details-content">
-                <h3>Expert Care You Can Trust</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="overview-header">
+                <h3>Our Neurological Services</h3>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+              </div>
+            </div>
+          </div>
 
-                <div class="care-features">
-                  <div class="feature-row">
-                    <i class="bi bi-check-circle"></i>
-                    <span>State-of-the-art cardiac catheterization laboratory</span>
-                  </div>
-                  <div class="feature-row">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Advanced imaging and diagnostic capabilities</span>
-                  </div>
-                  <div class="feature-row">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Minimally invasive surgical procedures</span>
-                  </div>
-                  <div class="feature-row">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Comprehensive rehabilitation programs</span>
-                  </div>
+          <div class="row gy-4 services-grid">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-lightning-charge"></i>
                 </div>
+                <h4>Epilepsy Treatment</h4>
+                <p>Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.</p>
               </div>
             </div>
 
-            <div class="col-lg-4">
-              <div class="info-sidebar" data-aos="fade-left" data-aos-delay="700">
-                <div class="info-card">
-                  <h4>Department Hours</h4>
-                  <div class="hours-list">
-                    <div class="hours-item">
-                      <span>Monday - Friday</span>
-                      <span>7:00 AM - 8:00 PM</span>
-                    </div>
-                    <div class="hours-item">
-                      <span>Saturday</span>
-                      <span>8:00 AM - 5:00 PM</span>
-                    </div>
-                    <div class="hours-item">
-                      <span>Sunday</span>
-                      <span>Emergency Only</span>
-                    </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="550">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-search"></i>
+                </div>
+                <h4>Diagnostic Imaging</h4>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-heart-pulse"></i>
+                </div>
+                <h4>Stroke Prevention</h4>
+                <p>Donec sollicitudin molestie malesuada. Proin eget tortor risus cras ultricies ligula.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="650">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-person-gear"></i>
+                </div>
+                <h4>Movement Disorders</h4>
+                <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-moon"></i>
+                </div>
+                <h4>Sleep Disorders</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="750">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>Memory Care</h4>
+                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a vestibulum ac diam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="expert-care-section" data-aos="fade-up" data-aos-delay="800">
+          <div class="row align-items-center">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="900">
+              <div class="expert-image">
+                <img src="assets/img/health/neurology-4.webp" alt="Neurological Expert" class="img-fluid">
+              </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="900">
+              <div class="expert-content">
+                <h3>Leading Neurological Expertise</h3>
+                <p class="lead">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh donec rutrum congue leo eget malesuada.</p>
+
+                <div class="expertise-list">
+                  <div class="expertise-item">
+                    <i class="bi bi-check2"></i>
+                    <span>Board-certified neurologists and neurosurgeons</span>
+                  </div>
+                  <div class="expertise-item">
+                    <i class="bi bi-check2"></i>
+                    <span>State-of-the-art diagnostic equipment and facilities</span>
+                  </div>
+                  <div class="expertise-item">
+                    <i class="bi bi-check2"></i>
+                    <span>Comprehensive care from diagnosis to rehabilitation</span>
+                  </div>
+                  <div class="expertise-item">
+                    <i class="bi bi-check2"></i>
+                    <span>Personalized treatment plans for every patient</span>
                   </div>
                 </div>
 
-                <div class="info-card">
-                  <h4>Quick Links</h4>
-                  <div class="quick-links">
-                    <a href="services.html">
-                      <i class="bi bi-arrow-right"></i>
-                      <span>All Cardiology Services</span>
-                    </a>
-                    <a href="doctors.html">
-                      <i class="bi bi-arrow-right"></i>
-                      <span>Meet Our Specialists</span>
-                    </a>
-                    <a href="insurance.html">
-                      <i class="bi bi-arrow-right"></i>
-                      <span>Insurance Information</span>
-                    </a>
+                <div class="contact-info">
+                  <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                      <span class="contact-label">Emergency Neurology</span>
+                      <span class="contact-value">+1 (555) 234-5678</span>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="bi bi-calendar-check"></i>
+                    <div>
+                      <span class="contact-label">Appointments</span>
+                      <span class="contact-value">Mon - Fri, 8:00 AM - 6:00 PM</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -276,83 +331,130 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative">
+  <footer id="footer" class="footer-16 footer position-relative">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">MediNest</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+    <div class="container">
+
+      <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-start">
+
+          <div class="col-lg-5">
+            <div class="brand-section">
+              <a href="index.html" class="logo d-flex align-items-center mb-4">
+                <span class="sitename">Clinic</span>
+              </a>
+              <p class="brand-description">Crafting exceptional digital experiences through thoughtful design and innovative solutions that elevate your brand presence.</p>
+
+              <div class="contact-info mt-5">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>123 Creative Boulevard, Design District, NY 10012</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+1 (555) 987-6543</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>hello@designstudio.com</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+
+          <div class="col-lg-7">
+            <div class="footer-nav-wrapper">
+              <div class="row">
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Studio</h6>
+                    <nav class="footer-nav">
+                      <a href="#">Our Story</a>
+                      <a href="#">Design Process</a>
+                      <a href="#">Portfolio</a>
+                      <a href="#">Case Studies</a>
+                      <a href="#">Awards</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Services</h6>
+                    <nav class="footer-nav">
+                      <a href="#">Brand Identity</a>
+                      <a href="#">Web Design</a>
+                      <a href="#">Mobile Apps</a>
+                      <a href="#">Digital Strategy</a>
+                      <a href="#">Consultation</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Resources</h6>
+                    <nav class="footer-nav">
+                      <a href="#">Design Blog</a>
+                      <a href="#">Style Guide</a>
+                      <a href="#">Free Assets</a>
+                      <a href="#">Tutorials</a>
+                      <a href="#">Inspiration</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Connect</h6>
+                    <nav class="footer-nav">
+                      <a href="#">Start Project</a>
+                      <a href="#">Schedule Call</a>
+                      <a href="#">Join Newsletter</a>
+                      <a href="#">Follow Updates</a>
+                      <a href="#">Partnership</a>
+                    </nav>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
       </div>
+
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong>MediNest</strong>&nbsp;<span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-content" data-aos="fade-up" data-aos-delay="300">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6">
+              <div class="copyright">
+                <p>© <span class="sitename">Clinic</span>. All rights reserved.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <div class="credits">
+                  <!-- All the links in the footer should remain intact. -->
+                  <!-- You can delete the links only if you've purchased the pro version. -->
+                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                  <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
 
@@ -370,8 +472,6 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
