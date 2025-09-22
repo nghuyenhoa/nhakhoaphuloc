@@ -4,6 +4,17 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Liên hệ - Nha Khoa Phú Lộc</title>
+  <meta name="description" content="Liên hệ Nha Khoa Phú Lộc để được tư vấn và hỗ trợ tốt nhất.">
+  <meta name="keywords" content="nha khoa, liên hệ, Nha Khoa Phú Lộc, tư vấn, đặt lịch">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,200 +30,166 @@
 
 <body class="contact-page">
 
-<!-- FACEBOOK SDK -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" 
-  src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0"></script>
-
-<!-- HEADER -->
-<header id="header" class="header fixed-top">
-  <div class="topbar d-flex align-items-center dark-background">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center">
-          <a href="mailto:contact@example.com">contact@example.com</a>
-        </i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="branding d-flex align-items-cente">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Nha Khoa Phú Lộc</h1>
-      </a>
-
-      <!-- Menu tiếng Việt -->
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="about.html">Giới thiệu</a></li>
-          <li><a href="departments.html">Chuyên khoa</a></li>
-          <li><a href="services.html">Dịch vụ</a></li>
-          <li><a href="contact.html" class="active">Liên hệ</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
-  </div>
-</header>
-<!-- END HEADER -->
-
-<main class="main" style="margin-top:120px;">
-
-  <!-- GOOGLE MAP -->
-  <section id="contact-map" class="contact-map section">
-    <div class="container" data-aos="fade-up">
-      <h2 class="mb-4">Bản đồ</h2>
-      <iframe 
-        src="https://www.google.com/maps?q=66+Trần+Hưng+Đạo,+Phường+Tân+Sơn+Nhì,+Thành+Phố+Hồ+Chí+Minh&hl=vi&z=17&output=embed" 
-        width="100%" 
-        height="500" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </section>
-  <!-- END GOOGLE MAP -->
-
-  <!-- CONTACT INFO -->
-  <section id="contact-info" class="contact-info section">
-    <div class="container" data-aos="fade-up">
-      <div class="row gy-4">
-        <div class="col-lg-6">
-          <h3>Thông tin liên hệ</h3>
-          <p>Địa chỉ: 66 Trần Hưng Đạo, Phường Tân Sơn Nhì, TP. Hồ Chí Minh</p>
-          <p>Điện thoại: +84 555 987-6543</p>
-          <p>Email: hello@nhakhoaphuloc.com</p>
+  <!-- HEADER -->
+  <header id="header" class="header fixed-top">
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center">
+            <a href="mailto:hello@nhakhoaphuloc.com">hello@nhakhoaphuloc.com</a>
+          </i>
+          <i class="bi bi-phone d-flex align-items-center ms-4">
+            <span>+84 555 987-6543</span>
+          </i>
         </div>
-        <div class="col-lg-6">
-          <h3>Gửi tin nhắn</h3>
-          <form action="#" method="post" role="form" class="php-email-form">
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Họ và tên" required>
-              </div>
-              <div class="col-md-6">
-                <input type="email" name="email" class="form-control" placeholder="Email" required>
-              </div>
-              <div class="col-md-12">
-                <input type="text" name="subject" class="form-control" placeholder="Tiêu đề" required>
-              </div>
-              <div class="col-md-12">
-                <textarea name="message" class="form-control" rows="6" placeholder="Nội dung" required></textarea>
-              </div>
-              <div class="col-md-12 text-center">
-                <button type="submit">Gửi</button>
-              </div>
-            </div>
-          </form>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
     </div>
-  </section>
-  <!-- END CONTACT INFO -->
 
-</main>
+    <div class="branding d-flex align-items-cente">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename">Nha Khoa Phú Lộc</h1>
+        </a>
 
-<!-- FOOTER -->
-<footer id="footer" class="footer-16 footer position-relative">
-  <div class="container">
-    <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
-      <div class="row align-items-start">
-        <!-- Cột trái -->
-        <div class="col-lg-6">
-          <div class="brand-section">
-            <a href="index.html" class="logo d-flex align-items-center mb-4">
-              <span class="sitename">Nha Khoa Phú Lộc</span>
-            </a>
-            <p class="brand-description">Nha Khoa Phú Lộc – Chăm sóc nụ cười của bạn.</p>
-            <div class="contact-info mt-5">
-              <div class="contact-item">
-                <i class="bi bi-geo-alt"></i>
-                <span>66 Trần Hưng Đạo, Phường Tân Sơn Nhì, TP. Hồ Chí Minh</span>
-              </div>
-              <div class="contact-item">
-                <i class="bi bi-telephone"></i>
-                <span>+84 555 987-6543</span>
-              </div>
-              <div class="contact-item">
-                <i class="bi bi-envelope"></i>
-                <span>hello@nhakhoaphuloc.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cột phải: Facebook Page Plugin (đã to ra) -->
-        <div class="col-lg-6 text-lg-end d-flex flex-column align-items-lg-end justify-content-lg-center">
-          <div class="fb-page" 
-            data-href="https://www.facebook.com/NhaKhoaPhuLocTanPhu/" 
-            data-tabs="timeline" 
-            data-width="1600" 
-            data-height="1700" 
-            data-small-header="false" 
-            data-adapt-container-width="true" 
-            data-hide-cover="false" 
-            data-show-facepile="true">
-            <blockquote cite="https://www.facebook.com/NhaKhoaPhuLocTanPhu/" class="fb-xfbml-parse-ignore">
-              <a href="https://www.facebook.com/NhaKhoaPhuLocTanPhu/">Nha Khoa Phú Lộc</a>
-            </blockquote>
-          </div>
-        </div>
-
+        <!-- Menu tiếng Việt -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="departments.html">Chuyên khoa</a></li>
+            <li><a href="services.html">Dịch vụ</a></li>
+            <li><a href="contact.html" class="active">Liên hệ</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
     </div>
-  </div>
+  </header>
+  <!-- END HEADER -->
 
-  <div class="footer-bottom mt-3">
+  <main class="main" style="margin-top:120px;">
+
+    <!-- GOOGLE MAP -->
+    <section id="contact-map" class="contact-map section">
+      <div class="container" data-aos="fade-up">
+        <h2 class="mb-4">Bản đồ</h2>
+        <iframe 
+          src="https://www.google.com/maps?q=66+Trần+Hưng+Đạo,+Phường+Tân+Sơn+Nhì,+Thành+Phố+Hồ+Chí+Minh&hl=vi&z=17&output=embed" 
+          width="100%" 
+          height="500" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+    <!-- END GOOGLE MAP -->
+
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer-16 footer position-relative">
     <div class="container">
-      <div class="bottom-content" data-aos="fade-up" data-aos-delay="300">
-        <div class="row align-items-center">
+      <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-start">
+          
+          <!-- Cột thông tin -->
           <div class="col-lg-6">
-            <div class="copyright">
-              <p>© <span class="sitename">Nha Khoa Phú Lộc</span>. All rights reserved.</p>
+            <div class="brand-section">
+
+              <div class="contact-info mt-5">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>66 Trần Hưng Đạo, Phường Tân Sơn Nhì, TP. Hồ Chí Minh</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>028.3949.1373 - 0909.067.033</span>   
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>locnhasi@gmail.com</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6 text-lg-end">
-            <div class="legal-links">
-              <a href="#">Chính sách bảo mật</a>
-              <a href="#">Điều khoản dịch vụ</a>
-              <a href="#">Cookie</a>
+
+          <!-- Cột Fanpage Facebook -->
+          <div class="col-lg-6">
+            <h4>Theo dõi chúng tôi trên Facebook</h4>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" 
+              src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="abc">
+            </script>
+
+            <div class="fb-page" 
+                 data-href="https://www.facebook.com/NhaKhoaPhuLocTanPhu/" 
+                 data-tabs="timeline" 
+                 data-width="500" 
+                 data-height="400" 
+                 data-small-header="false" 
+                 data-adapt-container-width="true" 
+                 data-hide-cover="false" 
+                 data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/NhaKhoaPhuLocTanPhu/" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/NhaKhoaPhuLocTanPhu/">Nha Khoa Phú Lộc</a>
+              </blockquote>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-content" data-aos="fade-up" data-aos-delay="300">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="copyright">
+                <p>© <span class="sitename">Nha Khoa Phú Lộc</span>. All rights reserved.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="legal-links">
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Điều khoản dịch vụ</a>
+                <a href="#">Cookie</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- END FOOTER -->
+  </footer>
+  <!-- END FOOTER -->
 
-<!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-  <i class="bi bi-arrow-up-short"></i>
-</a>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-<!-- Preloader -->
-<div id="preloader"></div>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-<!-- Main JS File -->
-<script src="assets/js/main.js"></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
