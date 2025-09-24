@@ -3,21 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Nha Khoa Phú Lộc</title>
-  <meta name="description" content="Nha Khoa Phú Lộc – Địa chỉ uy tín trong chăm sóc và điều trị răng miệng, do BS. Nguyễn Phú Lộc phụ trách, với hơn 10 năm kinh nghiệm.">
-
-  <!-- SEO OG tags -->
-  <meta property="og:title" content="Nha Khoa Phú Lộc">
-  <meta property="og:description" content="Nha Khoa Phú Lộc – Địa chỉ uy tín trong chăm sóc và điều trị răng miệng, do BS. Nguyễn Phú Lộc phụ trách, với hơn 10 năm kinh nghiệm.">
-  <meta property="og:image" content="assets/img/og-image.jpg">
-  <meta property="og:url" content="https://nhakhoaphuloc.com/about.html">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nha Khoa Phú Lộc">
-  <meta name="twitter:description" content="Nha Khoa Phú Lộc – Địa chỉ uy tín trong chăm sóc và điều trị răng miệng, do BS. Nguyễn Phú Lộc phụ trách, với hơn 10 năm kinh nghiệm.">
-  <meta name="twitter:image" content="assets/img/og-image.jpg">
+  <title>Giới thiệu - Nha Khoa Phú Lộc</title>
+  <meta name="description" content="Nha Khoa Phú Lộc do BS. Nguyễn Phú Lộc phụ trách, cung cấp dịch vụ nha khoa uy tín, chuyên nghiệp và hiện đại.">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" type="image/png">
@@ -33,14 +20,32 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    /* Chat icons giống index */
+    main {
+      padding-top: 140px; /* tránh header che mất */
+    }
+    .about-section {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .about-section img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .about-section img:hover {
+      transform: scale(1.02);
+    }
+    /* Chat icons bên phải, dọc */
     .chat-icons {
       position: fixed;
       right: 20px;
-      bottom: 150px;
+      bottom: 500px; /* cao lên */
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 15px;
       z-index: 9999;
     }
     .chat-icons a img {
@@ -53,17 +58,6 @@
     .chat-icons a img:hover {
       transform: scale(1.1);
     }
-
-    /* Đẩy nội dung xuống thấp hơn header */
-    .page-title {
-      padding-top: 150px;
-    }
-
-    /* Căn hình ở giữa */
-    .page-title img {
-      max-width: 100%;
-      height: auto;
-    }
   </style>
 </head>
 
@@ -74,12 +68,11 @@
   <div class="topbar d-flex align-items-center dark-background">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-         <i class="bi bi-phone d-flex align-items-center ms-4"><span>028.3949.1373</span></i>
-        </i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>028.3949.1373</span></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>0909067033</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.facebook.com/NhaKhoaPhuLocTanPhu" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
       </div>
     </div>
   </div>
@@ -100,77 +93,42 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </div>
 </header>
 
 <main class="main">
+  <section class="about-section container" data-aos="fade-up" data-aos-delay="100">
+    <p>
+      <strong>Nha Khoa Phú Lộc</strong> do <strong>BS. Nguyễn Phú Lộc</strong> trực tiếp phụ trách, là địa chỉ uy tín trong lĩnh vực chăm sóc và điều trị răng miệng. 
+      Bác sĩ tốt nghiệp Đại học Y Dược TP.HCM, chuyên ngành Răng Hàm Mặt năm 2005, với hơn 10 năm kinh nghiệm trong nha khoa tổng quát và điều trị chuyên sâu.
+    </p>
 
-  <!-- PAGE CONTENT -->
-  <section class="page-title">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <a href="assets/img/hinh1.jpg" class="glightbox" data-gallery="about-gallery">
+      <img src="assets/img/hinh1.jpg" alt="Hình 1">
+    </a>
 
-      <!-- Đoạn 1 -->
-      <div class="row mb-5">
-        <div class="col-12">
-          <p>
-            Nha Khoa Phú Lộc do <strong>BS. Nguyễn Phú Lộc</strong> trực tiếp phụ trách, 
-            là địa chỉ uy tín trong lĩnh vực chăm sóc và điều trị răng miệng. 
-            Bác sĩ tốt nghiệp <strong>Đại học Y Dược TP.HCM</strong>, chuyên ngành Răng Hàm Mặt năm 2005, 
-            với hơn <strong>10 năm kinh nghiệm</strong> trong nha khoa tổng quát và điều trị chuyên sâu.
-          </p>
-        </div>
-        <div class="col-12 text-center mt-3">
-          <a href="assets/img/about1.jpg" class="glightbox">
-            <img src="assets/img/about1.jpg" alt="Hình 1" class="img-fluid rounded shadow">
-          </a>
-        </div>
-      </div>
+    <p>
+      Tại Nha Khoa Phú Lộc, chúng tôi cung cấp đa dạng các dịch vụ nha khoa như: chăm sóc răng miệng tổng quát, cạo vôi, trám răng, tẩy trắng, niềng răng, 
+      bọc răng sứ và các phương pháp điều trị thẩm mỹ khác. Mỗi dịch vụ đều được thực hiện với trình độ chuyên môn cao và thiết bị hiện đại nhằm đảm bảo kết quả tốt nhất cho khách hàng.
+    </p>
 
-      <!-- Đoạn 2 -->
-      <div class="row mb-5">
-        <div class="col-12">
-          <p>
-            Tại Nha Khoa Phú Lộc, chúng tôi cung cấp đa dạng các dịch vụ nha khoa như: 
-            <em>chăm sóc răng miệng tổng quát, cạo vôi, trám răng, tẩy trắng, niềng răng, bọc răng sứ</em> 
-            và các phương pháp điều trị thẩm mỹ khác. 
-            Mỗi dịch vụ đều được thực hiện với trình độ chuyên môn cao và thiết bị hiện đại 
-            nhằm đảm bảo kết quả tốt nhất cho khách hàng.
-          </p>
-        </div>
-        <div class="col-12 text-center mt-3">
-          <div class="d-flex gap-3 justify-content-center flex-wrap">
-            <a href="assets/img/about2.jpg" class="glightbox">
-              <img src="assets/img/about2.jpg" alt="Hình 2" class="img-fluid rounded shadow" style="max-width:48%;">
-            </a>
-            <a href="assets/img/about3.jpg" class="glightbox">
-              <img src="assets/img/about3.jpg" alt="Hình 3" class="img-fluid rounded shadow" style="max-width:48%;">
-            </a>
-          </div>
-        </div>
-      </div>
+    <a href="assets/img/hinh2.jpg" class="glightbox" data-gallery="about-gallery">
+      <img src="assets/img/hinh2.jpg" alt="Hình 2">
+    </a>
+    <a href="assets/img/hinh3.jpg" class="glightbox" data-gallery="about-gallery">
+      <img src="assets/img/hinh3.jpg" alt="Hình 3">
+    </a>
 
-      <!-- Đoạn 3 -->
-      <div class="row mb-5">
-        <div class="col-12">
-          <p>
-            Với sự tận tâm, chuyên nghiệp và thân thiện, 
-            <strong>BS. Nguyễn Phú Lộc</strong> cam kết mang đến giải pháp điều trị tối ưu, 
-            an toàn và hiệu quả. 
-            Mục tiêu của chúng tôi là giúp bạn sở hữu nụ cười khỏe đẹp, tự tin và rạng rỡ mỗi ngày.
-          </p>
-        </div>
-        <div class="col-12 text-center mt-3">
-          <a href="assets/img/about4.jpg" class="glightbox">
-            <img src="assets/img/about4.jpg" alt="Hình 4" class="img-fluid rounded shadow">
-          </a>
-        </div>
-      </div>
+    <p>
+      Với sự tận tâm, chuyên nghiệp và thân thiện, BS. Nguyễn Phú Lộc cam kết mang đến giải pháp điều trị tối ưu, an toàn và hiệu quả. 
+      Mục tiêu của chúng tôi là giúp bạn sở hữu nụ cười khỏe đẹp, tự tin và rạng rỡ mỗi ngày.
+    </p>
 
-    </div>
+    <a href="assets/img/hinh4.jpg" class="glightbox" data-gallery="about-gallery">
+      <img src="assets/img/hinh4.jpg" alt="Hình 4">
+    </a>
   </section>
-
 </main>
 
 <!-- FOOTER -->
@@ -202,8 +160,7 @@
           <h4>Theo dõi chúng tôi trên Facebook</h4>
           <div id="fb-root"></div>
           <script async defer crossorigin="anonymous" 
-            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="abc">
-          </script>
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="abc"></script>
 
           <div class="fb-page" 
                data-href="https://www.facebook.com/NhaKhoaPhuLocTanPhu/" 
@@ -264,7 +221,6 @@
 <script src="assets/js/main.js"></script>
 
 <script>
-  // Kích hoạt Glightbox
   const lightbox = GLightbox({
     selector: '.glightbox'
   });
@@ -279,6 +235,5 @@
     <img src="assets/img/messenger.png" alt="Messenger" />
   </a>
 </div>
-
 </body>
 </html>
