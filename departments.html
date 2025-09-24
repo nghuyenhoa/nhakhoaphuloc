@@ -3,79 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Nha Khoa Phú Lộc</title>
-  <meta name="description" content="Nha Khoa Phú Lộc cung cấp chuyên khoa nha khoa chất lượng cao, kết hợp chuyên môn vững vàng và trang thiết bị tiên tiến.">
-
-  <!-- SEO OG tags -->
-  <meta property="og:title" content="Nha Khoa Phú Lộc">
-  <meta property="og:description" content="Chuyên khoa nha khoa chất lượng cao, tận tâm và hiện đại cho gia đình bạn.">
-  <meta property="og:image" content="assets/img/og-image.jpg">
-  <meta property="og:url" content="https://nhakhoaphuloc.com">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nha Khoa Phú Lộc">
-  <meta name="twitter:description" content="Chuyên khoa nha khoa chất lượng cao, tận tâm và hiện đại cho gia đình bạn.">
-  <meta name="twitter:image" content="assets/img/og-image.jpg">
+  <title>Chuyên khoa - Nha Khoa Phú Lộc</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" type="image/png">
-  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- CSS -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <style>
-    /* Đẩy phần Chuyên khoa xuống dưới header */
-    #departments {
-      padding-top: 150px;
-    }
-
-    /* === Chat Icons Fixed Right === */
-    .chat-icons {
-      position: fixed;
-      right: 20px;
-      bottom: 150px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 9999;
-    }
-    .chat-icons a img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
-    .chat-icons a img:hover {
-      transform: scale(1.1);
-    }
-  </style>
+<style>
+.floating-social {
+  position: fixed;
+  right: 20px;      /* cách lề phải */
+  bottom: 400px;    /* điều chỉnh khoảng cách từ dưới lên */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 9999;
+}
+.floating-social a {
+  background: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #333;
+}
+.floating-social a:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+.floating-social img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+</style>
 </head>
 
-<body class="index-page">
+<body class="departments-page">
 
-<!-- HEADER -->
+<!-- ========== HEADER ========== -->
 <header id="header" class="header fixed-top">
+
   <div class="topbar d-flex align-items-center dark-background">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>028.3949.1373</span></i>
+        <i class="bi bi-envelope d-flex align-items-center">
+          <a href="mailto:locnhasi@gmail.com">locnhasi@gmail.com</a>
+        </i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>0909067033</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
-  </div>
+  </div><!-- End Top Bar -->
 
   <div class="branding d-flex align-items-cente">
     <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -83,145 +90,138 @@
         <h1 class="sitename">Nha Khoa Phú Lộc</h1>
       </a>
 
+      <!-- Menu tiếng Việt -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Trang chủ</a></li>
+          <li><a href="index.html">Trang chủ</a></li>
           <li><a href="about.html">Giới thiệu</a></li>
-          <li><a href="departments.html">Chuyên khoa</a></li>
+          <li><a href="departments.html" class="active">Chuyên khoa</a></li>
           <li><a href="services.html">Dịch vụ</a></li>
           <li><a href="contact.html">Liên hệ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </div>
 </header>
+<!-- END HEADER -->
 
-<main class="main">
+<main class="main" style="margin-top:120px;">
 
-  <!-- ======= Chuyên khoa ======= -->
-  <section id="departments" class="departments section">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <!-- CHUYÊN KHOA SECTION -->
+<section id="departments" class="departments section">
+  <div class="container" data-aos="fade-up">
 
-      <div class="section-header">
-        <h2>Chuyên khoa</h2>
-        <p>Các chuyên khoa cơ bản tại Nha Khoa Phú Lộc</p>
-      </div>
+    <div class="section-title">
+      <h1>Khám &amp; Tư Vấn Nha Khoa Tổng Quát – Bước Đầu Cho Nụ Cười Khỏe Đẹp</h1>
+      <p>Trong chăm sóc sức khỏe răng miệng, khám và tư vấn nha khoa tổng quát là bước quan trọng nhất giúp phát hiện sớm các vấn đề, ngăn ngừa biến chứng và duy trì hàm răng chắc khỏe, nụ cười tự tin. Đây là dịch vụ cơ bản nhưng không thể thiếu tại các phòng khám nha khoa uy tín.</p>
+    </div>
 
-      <div class="row gy-4">
+    <h2>1. Nha Khoa Tổng Quát Là Gì?</h2>
+    <p>Nha khoa tổng quát là chuyên khoa tiếp nhận, khám và điều trị các vấn đề thường gặp về răng – nướu – xương hàm. Dịch vụ này phù hợp cho mọi lứa tuổi, từ trẻ em đến người lớn, với mục tiêu:</p>
+    <ul>
+      <li>Kiểm tra tổng quát sức khỏe răng miệng định kỳ.</li>
+      <li>Phát hiện sớm sâu răng, viêm nướu, nha chu.</li>
+      <li>Tư vấn phương pháp điều trị, chăm sóc và dự phòng bệnh răng miệng.</li>
+    </ul>
 
-        <div class="col-lg-12">
-          <div class="department-item" data-aos="fade-up" data-aos-delay="150">
-            <h3>1. Khám &amp; tư vấn răng miệng</h3>
-            <ul>
-              <li>Kiểm tra tổng quát răng – lợi – miệng.</li>
-              <li>Tư vấn cách chăm sóc, vệ sinh răng.</li>
-              <li>Chụp X-quang răng cơ bản.</li>
-            </ul>
-          </div>
-        </div>
+    <h2>2. Các Dịch Vụ Chính Trong Nha Khoa Tổng Quát</h2>
+    <ul>
+      <li><strong>Khám &amp; Tư Vấn Răng Miệng:</strong> Đánh giá tình trạng răng, nướu và khớp cắn; đưa ra phác đồ điều trị phù hợp.</li>
+      <li><strong>Lấy Cao Răng – Đánh Bóng:</strong> Loại bỏ mảng bám, ngăn ngừa viêm nướu, nha chu.</li>
+      <li><strong>Điều Trị Sâu Răng – Trám Răng:</strong> Khôi phục cấu trúc răng bị tổn thương, đảm bảo thẩm mỹ.</li>
+      <li><strong>Điều Trị Tủy Răng:</strong> Cứu vãn răng bị viêm tủy, kéo dài tuổi thọ răng.</li>
+      <li><strong>Nhổ Răng An Toàn:</strong> Nhổ răng sữa, răng khôn, răng lung lay với kỹ thuật nhẹ nhàng.</li>
+      <li><strong>Tư Vấn Chăm Sóc Răng Miệng Tại Nhà:</strong> Hướng dẫn vệ sinh răng miệng khoa học, chế độ ăn uống hợp lý.</li>
+    </ul>
 
-        <div class="col-lg-12">
-          <div class="department-item" data-aos="fade-up" data-aos-delay="200">
-            <h3>2. Vệ sinh răng miệng</h3>
-            <ul>
-              <li>Cạo vôi răng, đánh bóng răng.</li>
-              <li>Fluor / Sealant bảo vệ răng.</li>
-            </ul>
-          </div>
-        </div>
+    <h2>3. Quy Trình Khám &amp; Tư Vấn Tại Phòng Khám</h2>
+    <ul>
+      <li><strong>Tiếp nhận &amp; ghi hồ sơ:</strong> Đón tiếp, lấy thông tin sức khỏe tổng quát.</li>
+      <li><strong>Khám lâm sàng:</strong> Bác sĩ kiểm tra răng – nướu – khớp cắn.</li>
+      <li><strong>Chụp X-quang (nếu cần):</strong> Xác định tình trạng xương hàm, răng khôn, tủy răng.</li>
+      <li><strong>Tư vấn phác đồ điều trị:</strong> Giải thích chi tiết, chi phí rõ ràng, minh bạch.</li>
+      <li><strong>Thực hiện điều trị:</strong> Theo nhu cầu và kế hoạch đã thống nhất.</li>
+    </ul>
 
-        <div class="col-lg-12">
-          <div class="department-item" data-aos="fade-up" data-aos-delay="250">
-            <h3>3. Điều trị răng cơ bản</h3>
-            <ul>
-              <li>Trám răng sâu, răng vỡ.</li>
-              <li>Điều trị tủy răng (nội nha cơ bản).</li>
-              <li>Nhổ răng nhỏ / răng khôn đơn giản.</li>
-            </ul>
-          </div>
-        </div>
+    <h2>4. Lợi Ích Khi Khám Nha Khoa Định Kỳ</h2>
+    <ul>
+      <li>Phát hiện bệnh sớm, điều trị nhanh chóng.</li>
+      <li>Tiết kiệm chi phí so với điều trị muộn.</li>
+      <li>Giữ hàm răng chắc khỏe, phòng tránh rụng răng sớm.</li>
+      <li>Nụ cười sáng khỏe, tự tin trong giao tiếp.</li>
+    </ul>
 
-        <div class="col-lg-12">
-          <div class="department-item" data-aos="fade-up" data-aos-delay="300">
-            <h3>4. Phục hình răng cơ bản</h3>
-            <ul>
-              <li>Làm răng giả tháo lắp.</li>
-              <li>Phục hồi răng mất nhỏ (Inlay, Onlay cơ bản).</li>
-            </ul>
-          </div>
-        </div>
+    <h2>5. Vì Sao Chọn phòng khám Phú Lộc?</h2>
+    <ul>
+      <li><strong>Bác sĩ nhiều kinh nghiệm:</strong> Được đào tạo chuyên sâu, tận tâm.</li>
+      <li><strong>Trang thiết bị hiện đại:</strong> Máy chụp X-quang, máy lấy cao răng siêu âm tiên tiến.</li>
+      <li><strong>Quy trình an toàn:</strong> Vô trùng dụng cụ, đảm bảo sức khỏe khách hàng.</li>
+      <li><strong>Chi phí hợp lý – minh bạch:</strong> Có bảng giá rõ ràng trước khi điều trị.</li>
+    </ul>
 
-        <div class="col-lg-12">
-          <div class="department-item" data-aos="fade-up" data-aos-delay="350">
-            <h3>5. Chăm sóc răng trẻ em</h3>
-            <ul>
-              <li>Khám, tư vấn vệ sinh răng sữa.</li>
-              <li>Trám răng sữa, phòng ngừa sâu răng.</li>
-            </ul>
-          </div>
-        </div>
+    <h2>6. Lời Khuyên Từ Bác Sĩ</h2>
+    <p>Khám răng định kỳ 6 tháng/lần sẽ giúp bạn bảo vệ răng miệng tốt nhất. Nếu có dấu hiệu như đau nhức, chảy máu nướu, hôi miệng kéo dài… hãy đến ngay nha khoa để được kiểm tra kịp thời.</p>
 
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
-  </section>
-  <!-- End Chuyên khoa -->
+  </div>
+</section>
+<!-- END CHUYÊN KHOA SECTION -->
 
 </main>
 
-<!-- FOOTER -->
-<footer id="footer" class="footer-16 footer position-relative">
-  <div class="container">
-    <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
-      <div class="row align-items-start">
-        
-        <div class="col-lg-6">
-          <div class="brand-section">
-            <div class="contact-info mt-5">
-              <div class="contact-item">
-                <i class="bi bi-geo-alt"></i>
-                <span>66 Trần Hưng Đạo, Phường Tân Sơn Nhì, TP. Hồ Chí Minh</span>
-              </div>
-              <div class="contact-item">
-                <i class="bi bi-telephone"></i>
-                <span>028.3949.1373 - 0909.067.033</span>   
-              </div>
-              <div class="contact-item">
-                <i class="bi bi-envelope"></i>
-                <span>locnhasi@gmail.com</span>
+ <!-- FOOTER -->
+  <footer id="footer" class="footer-16 footer position-relative">
+    <div class="container">
+      <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-start">
+          
+          <!-- Cột thông tin -->
+          <div class="col-lg-6">
+            <div class="brand-section">
+
+              <div class="contact-info mt-5">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>66 Trần Hưng Đạo, Phường Tân Sơn Nhì, TP. Hồ Chí Minh</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>028.3949.1373 - 0909.067.033</span>   
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>locnhasi@gmail.com</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-6">
-          <h4>Theo dõi chúng tôi trên Facebook</h4>
-          <div id="fb-root"></div>
-          <script async defer crossorigin="anonymous" 
-            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="abc">
-          </script>
+          <!-- Cột Fanpage Facebook -->
+          <div class="col-lg-6">
+            <h4>Theo dõi chúng tôi trên Facebook</h4>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" 
+              src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="abc">
+            </script>
 
-          <!-- Chỉ hiện ảnh bìa + nút theo dõi -->
-          <div class="fb-page" 
-               data-href="https://www.facebook.com/NhaKhoaPhuLocTanPhu/" 
-               data-tabs="" 
-               data-width="500" 
-               data-height="130" 
-               data-small-header="false" 
-               data-adapt-container-width="true" 
-               data-hide-cover="false" 
-               data-show-facepile="true">
-            <blockquote cite="https://www.facebook.com/NhaKhoaPhuLocTanPhu/" class="fb-xfbml-parse-ignore">
-              <a href="https://www.facebook.com/NhaKhoaPhuLocTanPhu/">Nha Khoa Phú Lộc</a>
-            </blockquote>
+            <div class="fb-page" 
+                 data-href="https://www.facebook.com/NhaKhoaPhuLocTanPhu/" 
+                 data-tabs="" 
+                 data-width="500" 
+                 data-height="150" 
+                 data-small-header="false" 
+                 data-adapt-container-width="true" 
+                 data-hide-cover="false" 
+                 data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/NhaKhoaPhuLocTanPhu/" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/NhaKhoaPhuLocTanPhu/">Nha Khoa Phú Lộc</a>
+              </blockquote>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
-  </div>
 
   <div class="footer-bottom">
     <div class="container">
@@ -244,6 +244,7 @@
     </div>
   </div>
 </footer>
+<!-- END FOOTER -->
 
 <!-- Scroll Top -->
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
@@ -253,24 +254,27 @@
 <!-- Preloader -->
 <div id="preloader"></div>
 
-<!-- JS -->
+<!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main JS File -->
 <script src="assets/js/main.js"></script>
 
-<!-- Chat icons -->
-<div class="chat-icons">
-  <a href="https://zalo.me/0909067033" target="_blank" class="zalo-icon">
+
+
+<!-- Floating Social Icons -->
+<div class="floating-social">
+  <a href="https://zalo.me/0909067033" target="_blank" class="zalo">
     <img src="assets/img/zalo.png" alt="Zalo" />
   </a>
-  <a href="https://m.me/NhaKhoaPhuLocTanPhu" target="_blank" class="messenger-icon">
+  <a href="https://m.me/NhaKhoaPhuLocTanPhu" target="_blank" class="messenger">
     <img src="assets/img/messenger.png" alt="Messenger" />
   </a>
 </div>
-
 </body>
 </html>
